@@ -1,0 +1,63 @@
+site_name: Hướng dẫn sử dụng Nexus AI
+site_description: Hướng dẫn sử dụng Nexus AI dành cho người dùng cuối
+site_url: https://dale-lee.github.io/nexus-ai-docs/
+repo_url: https://github.com/dale-lee/nexus-ai-docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: vi
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Chuyển sang giao diện tối
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Chuyển sang giao diện sáng
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Giới thiệu: index.md
+  - Kho tri thức:
+      - Cấu hình kho tri thức: kho-tri-thuc/cau-hinh.md
+      - Chọn bộ phân tích PDF: kho-tri-thuc/chon-bo-phan-tich-pdf.md
+      - Kiểm tra truy hồi: kho-tri-thuc/kiem-tra-truy-hoi.md
+      - Metadata: kho-tri-thuc/metadata.md
+  - Hỏi đáp:
+      - Bắt đầu hỏi đáp: hoi-dap/bat-dau.md
+  - Tìm kiếm: tim-kiem.md
+  - Agent:
+      - Giới thiệu Agent: agent/gioi-thieu.md
+      - Nhúng Agent vào trang web: agent/nhung-vao-website.md
+  - Quản lý tệp: tep.md
+  - Nhóm:
+      - Tham gia hoặc rời nhóm: nhom/tham-gia.md
+      - Chia sẻ với nhóm: nhom/chia-se.md
+  - Câu hỏi thường gặp: cau-hoi-thuong-gap.md
