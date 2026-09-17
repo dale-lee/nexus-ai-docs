@@ -56,6 +56,7 @@ nav:
   - Agent:
       - Giới thiệu Agent: agent/gioi-thieu.md
       - Nhúng Agent vào trang web: agent/nhung-vao-website.md
+  - Bộ nhớ: bo-nho/gioi-thieu.md
   - Quản lý tệp: tep.md
   - Nhóm:
       - Tham gia hoặc rời nhóm: nhom/tham-gia.md

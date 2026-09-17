@@ -29,6 +29,10 @@ Kho tri thức và Agent **không tự động** được chia sẻ. Bạn phả
 
 *Thành viên nhóm sẽ thấy và dùng được Agent này.*
 
+## Chia sẻ bộ nhớ
+
+Mở bộ nhớ, chọn **Cấu hình** > **Cài đặt nâng cao**, đổi **Quyền** thành **Nhóm** rồi nhấn **Xác nhận**. Xem [Bộ nhớ](../bo-nho/gioi-thieu.md).
+
 ## Chia sẻ trợ lý hỏi đáp
 
 Hiện chưa hỗ trợ chia sẻ trợ lý hỏi đáp giữa các thành viên. Cách thay thế: chia sẻ kho tri thức, mỗi thành viên tự tạo trợ lý của mình gắn với kho đó.

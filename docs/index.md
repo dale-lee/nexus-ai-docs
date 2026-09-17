@@ -12,6 +12,7 @@ Tài liệu này hướng dẫn các thao tác hằng ngày của người dùng
 | **Hỏi đáp** | Trò chuyện nhiều lượt với một *trợ lý* gắn với một hoặc nhiều kho tri thức. |
 | **Tìm kiếm** | Hỏi một lượt, nhận câu trả lời tóm tắt kèm danh sách các khối liên quan. |
 | **Agent** | Luồng xử lý tự động (workflow) gồm nhiều bước, dùng cho các kịch bản phức tạp hơn hỏi đáp thông thường. |
+| **Bộ nhớ** | Nơi Agent lưu và rút ra thông tin từ các cuộc trò chuyện trước để trả lời liền mạch, cá nhân hóa. |
 | **Quản lý tệp** | Kho tệp trung tâm; một tệp có thể được liên kết vào nhiều kho tri thức. |
 | **Nhóm** | Chia sẻ kho tri thức và Agent với đồng nghiệp. |
 
