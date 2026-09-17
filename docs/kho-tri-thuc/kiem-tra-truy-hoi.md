@@ -8,7 +8,7 @@ Kiểm tra xem kho tri thức có tìm được đúng khối nội dung mong mu
 
 Sau khi tải lên và phân tích tệp, bạn nên chạy kiểm tra truy hồi *trước khi* cấu hình trợ lý hỏi đáp. Đây không phải bước thừa: cấu hình kho tri thức, cấu hình trợ lý và mô hình được dùng đều ảnh hưởng lớn đến kết quả cuối. Kiểm tra truy hồi xác nhận rằng các khối đúng có thể được tìm thấy, giúp bạn khoanh vùng vấn đề nhanh. Ví dụ, nếu biết chắc khối đúng đã được truy hồi mà câu trả lời vẫn sai, vấn đề nằm ở mô hình hoặc prompt chứ không phải ở dữ liệu.
 
-Khi kiểm tra, các khối được tìm bằng *tìm kiếm lai*: kết hợp độ tương đồng từ khóa có trọng số với độ tương đồng vector có trọng số (hoặc điểm xếp hạng lại, nếu bạn chọn mô hình rerank).
+Khi kiểm tra, các khối được tìm bằng *tìm kiếm lai*: kết hợp độ tương đồng từ khóa (full-text) có trọng số với độ tương đồng vector có trọng số (hoặc điểm xếp hạng lại, nếu bạn chọn mô hình rerank).
 
 ## Điều kiện
 
@@ -21,12 +21,12 @@ Khi kiểm tra, các khối được tìm bằng *tìm kiếm lai*: kết hợp 
 
 Khối có độ tương đồng thấp hơn ngưỡng sẽ bị loại. Mặc định 0.2, nghĩa là chỉ những khối có điểm tương đồng lai từ 20 trở lên mới được truy hồi.
 
-### Trọng số tương đồng vector
+### Trọng số tương đồng từ khóa
 
-Tỷ lệ đóng góp của độ tương đồng vector (hoặc điểm rerank) vào điểm tổng. Mặc định 0.3; phần còn lại (0.7) là trọng số của độ tương đồng từ khóa.
+Thanh trượt hiển thị hai phần: *vector* và *full-text* (từ khóa), tổng luôn bằng 1. Mặc định vector 0.30 / full-text 0.70.
 
-- Tăng trọng số vector khi câu hỏi diễn đạt khác với từ ngữ trong tài liệu (tìm theo ý nghĩa).
-- Giảm khi bạn cần khớp chính xác thuật ngữ, mã số, tên riêng.
+- Tăng phần vector khi câu hỏi diễn đạt khác với từ ngữ trong tài liệu (tìm theo ý nghĩa).
+- Tăng phần full-text khi bạn cần khớp chính xác thuật ngữ, mã số, tên riêng.
 
 ### Mô hình xếp hạng lại
 
@@ -51,19 +51,18 @@ Chọn một hoặc nhiều ngôn ngữ đích, hệ thống sẽ dịch câu h�
     - Chỉ chọn ngôn ngữ thực sự có trong kho tri thức.
     - Không chọn gì thì hệ thống chỉ tìm theo ngôn ngữ của câu hỏi; nội dung ngôn ngữ khác có thể bị bỏ sót.
 
-### Văn bản kiểm tra
-
-Ô nhập câu hỏi để kiểm tra.
-
 ## Các bước
 
-1. Mở trang **Kiểm tra truy hồi** của kho tri thức, nhập câu hỏi vào **Văn bản kiểm tra** rồi nhấn **Kiểm tra**.
-2. Xem danh sách khối trả về cùng điểm tương đồng của từng khối. Nếu kết quả chưa như ý, điều chỉnh các tham số ở trên và chạy lại.
+1. Mở kho tri thức, chọn **Kiểm tra truy hồi** ở cột bên trái.
+2. Nhập câu hỏi vào ô văn bản rồi nhấn **Kiểm tra**.
+3. Xem danh sách khối trả về ở cột **Kết quả**, mỗi khối kèm điểm *giống nhau lai*, *thuật ngữ* và *vectơ*. Nếu kết quả chưa như ý, điều chỉnh các tham số ở trên và chạy lại.
 
-   *Ví dụ: điểm tương đồng lai 28.56 = 25.17 (từ khóa) × 0.7 + 36.49 (vector) × 0.3.*
+    ![Kết quả kiểm tra truy hồi](../img/kho-tri-thuc/06-kiem-tra-truy-hoi.jpg)
+
+    *Ví dụ trong hình: điểm lai 31.81 = 13.40 (thuật ngữ) × 0.7 + 74.77 (vectơ) × 0.3.*
 
 !!! warning "Lưu ý"
-    Các tham số bạn điều chỉnh ở trang này **không tự lưu** vào trợ lý hỏi đáp. Sau khi tìm được bộ tham số tốt, hãy nhập lại chúng trong cài đặt của trợ lý hỏi đáp (hoặc thành phần **Truy xuất** của Agent).
+    Các tham số bạn điều chỉnh ở trang này **không tự lưu** vào trợ lý hỏi đáp. Sau khi tìm được bộ tham số tốt, hãy nhập lại chúng trong **Cài đặt nâng cao** của trợ lý hỏi đáp (hoặc thành phần **Truy xuất** của Agent).
 
 ## Câu hỏi thường gặp
 

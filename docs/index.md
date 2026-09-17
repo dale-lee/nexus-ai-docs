@@ -18,8 +18,11 @@ Tài liệu này hướng dẫn các thao tác hằng ngày của người dùng
 ## Đăng nhập
 
 1. Mở địa chỉ Nexus AI do quản trị viên cung cấp.
-2. Nhập **email** và **mật khẩu** của tài khoản đã được cấp, rồi nhấn **Đăng nhập**.
-3. Sau khi đăng nhập, thanh điều hướng phía trên gồm: **Kho tri thức**, **Hỏi đáp**, **Tìm kiếm**, **Agent**, **Quản lý tệp**. Ảnh đại diện ở góc phải mở trang **Cài đặt người dùng** (đổi mật khẩu, nhóm, đăng xuất).
+2. Nhập **Email** và **Mật khẩu** của tài khoản đã được cấp, rồi nhấn **Đăng nhập**.
+
+    ![Màn hình đăng nhập](img/gioi-thieu/01-dang-nhap.jpg)
+
+3. Sau khi đăng nhập, thanh điều hướng bên trái gồm: **Trang chủ**, **Kho tri thức**, **Hỏi đáp**, **Tìm kiếm**, **Agent**, **Bộ nhớ**, **Quản lý tệp**. Ảnh đại diện ở góc trên bên phải mở trang **Cài đặt người dùng** (hồ sơ, nhóm, đăng xuất); biểu tượng bên cạnh dùng để đổi ngôn ngữ và giao diện sáng/tối.
 
 !!! note "Chưa có tài khoản?"
     Liên hệ quản trị viên hệ thống để được cấp tài khoản hoặc mời vào nhóm.

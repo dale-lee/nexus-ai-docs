@@ -16,9 +16,9 @@ Có. Khi **Tối ưu hóa đa lượt** được bật (mặc định), câu h�
 
 Kiểm tra theo thứ tự:
 
-1. Tệp đã **phân tích xong** chưa (trạng thái trên trang **Dữ liệu** của kho tri thức)? Tệp có đang **Bật** không?
-2. Chạy [Kiểm tra truy hồi](kho-tri-thuc/kiem-tra-truy-hoi.md) với cùng câu hỏi. Nếu không thấy khối mong muốn, thử giảm **Ngưỡng tương đồng** hoặc điều chỉnh **Trọng số tương đồng vector**.
-3. Nếu kiểm tra truy hồi tìm được khối đúng nhưng trợ lý vẫn không trả lời, tăng **Top N** hoặc xem lại prompt **Hệ thống** trong cài đặt trợ lý.
+1. Tệp đã **phân tích xong** chưa (cột **Số lượng khối** trên trang **Tệp** của kho tri thức)? Tệp có đang **Bật** không?
+2. Chạy [Kiểm tra truy hồi](kho-tri-thuc/kiem-tra-truy-hoi.md) với cùng câu hỏi. Nếu không thấy khối mong muốn, thử giảm **Ngưỡng tương đồng** hoặc điều chỉnh **Trọng số tương đồng từ khóa**.
+3. Nếu kiểm tra truy hồi tìm được khối đúng nhưng trợ lý vẫn không trả lời, tăng **Top N** hoặc xem lại prompt **Hệ thống** trong **Cài đặt nâng cao** của trợ lý.
 
 ### Vì sao câu trả lời có thông tin không có trong tài liệu?
 
