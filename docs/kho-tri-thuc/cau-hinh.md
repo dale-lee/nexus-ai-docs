@@ -80,7 +80,7 @@ Có hai cách đưa tệp vào kho tri thức:
 - **Liên kết từ Quản lý tệp**: tải tệp lên **Quản lý tệp** trước, rồi liên kết vào một hoặc nhiều kho tri thức. Kho tri thức chỉ giữ *tham chiếu* đến tệp.
 - **Tải trực tiếp**: trên trang **Tệp** của kho tri thức, nhấn **Thêm tệp** để tải một hoặc nhiều tệp từ máy. Kho tri thức giữ *bản sao* của tệp.
 
-Ngoài ra, tài liệu có thể tự động chảy vào kho tri thức từ một nguồn bên ngoài — xem [Đồng bộ OneDrive và SharePoint](dong-bo-onedrive-sharepoint.md).
+Ngoài ra, tài liệu có thể tự động chảy vào kho tri thức từ một nguồn bên ngoài — xem [Đồng bộ OneDrive và SharePoint](nguon-du-lieu/onedrive-sharepoint.md).
 
 Tải trực tiếp có vẻ tiện hơn, nhưng chúng tôi *khuyến nghị* tải lên **Quản lý tệp** rồi liên kết. Như vậy, khi xóa tệp khỏi kho tri thức hoặc xóa cả kho, tệp gốc vẫn còn.
 
