@@ -28,6 +28,9 @@ Bạn cần xin quản trị viên Microsoft 365 của tổ chức bốn thông 
 
 Ứng dụng đó phải được cấp quyền `Files.Read.All` (cho OneDrive) hoặc cả `Sites.Read.All` và `Files.Read.All` (cho SharePoint), và phải được quản trị viên chấp thuận.
 
+!!! info "Dành cho quản trị viên Microsoft 365"
+    Nếu tổ chức chưa có sẵn ứng dụng này, xem [Lấy khoá kết nối Microsoft 365](azure-app-registration.md) — hướng dẫn từng bước cách đăng ký ứng dụng trên Azure, cấp quyền và tạo Client Secret.
+
 !!! danger "Quan trọng"
     Khi tạo Client Secret, Azure hiển thị **hai** giá trị: một *Value* (chuỗi ngẫu nhiên khoảng 40 ký tự) và một *Secret ID* (dạng GUID có 4 dấu gạch nối). Nexus AI cần **Value**. Dán nhầm Secret ID là lỗi phổ biến nhất và sẽ khiến kết nối thất bại. Azure chỉ hiển thị Value đúng một lần lúc tạo — nếu đã đóng cửa sổ, phải tạo secret mới.
 
