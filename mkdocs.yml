@@ -52,6 +52,7 @@ nav:
       - Metadata: kho-tri-thuc/metadata.md
       - Nguồn dữ liệu:
           - OneDrive và SharePoint: kho-tri-thuc/nguon-du-lieu/onedrive-sharepoint.md
+          - Lấy khoá kết nối Microsoft 365: kho-tri-thuc/nguon-du-lieu/azure-app-registration.md
   - Hỏi đáp:
       - Bắt đầu hỏi đáp: hoi-dap/bat-dau.md
   - Tìm kiếm: tim-kiem.md
